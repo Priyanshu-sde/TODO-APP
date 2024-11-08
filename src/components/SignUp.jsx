@@ -7,7 +7,7 @@ const SignUp = () => {
   const [name, setName] = useState('');
 
   const signup = async () => {
-    const response = await axios.post('https://todo-backend-1yyzdw3mi-priyanshu-sdes-projects.vercel.app/signup', { name, email, password });
+    const response = await axios.post('https://todo-backend-khaki-kappa.vercel.app/signup', { name, email, password });
     alert(response.data.message);
   };
 

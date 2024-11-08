@@ -6,7 +6,7 @@ const SignIn = ({ setToken }) => {
   const [password, setPassword] = useState('');
 
   const signin = async () => {
-    const response = await axios.post('https://todo-backend-1yyzdw3mi-priyanshu-sdes-projects.vercel.app/signin', { email, password });
+    const response = await axios.post('https://todo-backend-khaki-kappa.vercel.app/signin', { email, password });
     setToken(response.data.token);
     alert(response.data.message);
   };
